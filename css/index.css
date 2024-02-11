@@ -1,0 +1,187 @@
+:root {
+  --cinza: #4f4f4f;
+  --branco: #fbfbfb;
+}
+
+
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../Lato/Lato-Regular.ttf') format('ttf');
+  /* Outras propriedades, como font-weight, font-style, etc., podem ser adicionadas conforme necessário */
+}
+
+body {
+  color: var(--cinza) !important;
+  font-family: Lato;
+}
+
+/* CORES */
+
+.cor-dourada {
+  color: #ffde59;
+}
+
+.borda-dourada {
+  border-color: #ffde59;
+}
+
+.bg-dourado {
+  background-color: #ffde59;
+}
+
+/* HEADER */
+.header-logo {
+  width: 150px;
+}
+
+.sumir-mobile {
+  display: none;
+}
+
+#navbarNav a {
+  font-size: 1.2em !important;
+  font-weight: 700;
+}
+
+#navbarNav {
+  justify-content: center;
+}
+
+.card-desktop {
+  display: none;
+}
+
+.card-mobile {
+  display: block;
+}
+
+.card {
+  margin-bottom: 1em;
+  color: var(--bs-gray);
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 991px) {
+  #navbarNav a:hover {
+    transform: scale(1.2);
+  }
+
+  /* .card:hover {
+    transform: scale(1.1);
+  } */
+
+  .sumir-mobile {
+    display: block;
+  }
+
+  ul li {
+    margin-right: 30px;
+  }
+
+  .card-desktop {
+    display: block;
+    height: 350px;
+  }
+
+  .card-mobile {
+    display: none;
+  }
+
+  .card {
+    height: 350px;
+  }
+
+  .card-body {
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 991) {
+  
+}
+
+.bg {
+  background-image: url("/img/banner3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  position: relative;
+}
+
+.bg-branco {
+  background-color: var(--branco);
+}
+
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+
+.form-control-dark:focus {
+  border-color: var(--branco);
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle:not(:focus) {
+  outline: 0;
+}
+
+/* body {
+        font-family: Lato;
+    } */
+
+/* SOBRE MIM */
+.sobre-mim-imagem {
+  object-fit: contain;
+  height: 300px;
+}
+
+.button-header {
+  background-color: var(--branco);
+  color: var(--cinza);
+  border-color: var(--branco);
+}
+
+.button-header:hover {
+  background-color: var(--branco);
+  color: var(--cinza);
+  border-color: var(--branco);
+  transform: scale(1.1);
+}
+
+.sobre-mim-imagem {
+  height: 600px;
+}
+
+.bg-card-1 {
+  background-image: url("../img/card1.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#servicos {
+  color: var(--cinza);
+  background-image: url("../img/banner-servicos.jpg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-text,
+.card-title {
+  color: #000;
+}
