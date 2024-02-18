@@ -173,10 +173,10 @@ body {
   background-size: cover;
 }
 
-#servicos {
+.section-bg {
   color: var(--cinza);
   background-image: url("../img/banner-servicos.jpg");
-  background-position: left top;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -184,4 +184,29 @@ body {
 .card-text,
 .card-title {
   color: #000;
+}
+
+.contato-form {
+  color: var(--branco) !important;
+}
+
+.contato-form div input::placeholder, .contato-form textarea::placeholder {
+  color: var(--branco) !important; /* Cor do placeholder */
+  background-color: var(--branco) !important;
+  border-color: var(--branco);
+}
+
+.contato-form .form-label {
+  color: var(--cinza) !important;
+}
+
+.bota-whatsapp {
+  position: fixed;
+  right: 10px;
+  bottom: 10%;
+}
+
+.bota-whatsapp i {
+  font-size: 50px;
+  color: #00d084;
 }
